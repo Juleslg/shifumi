@@ -29,7 +29,6 @@ function playRound(playerSelection, computerSelection) {
         console.log("You Loose");
         computerscore += 1;
 
-
     }
 
     else if ((playerSelection == "paper") && (computerSelection == "paper")) {
@@ -71,7 +70,6 @@ function playRound(playerSelection, computerSelection) {
     else if ((playerSelection == "scissors") && (computerSelection == "paper")) {
 
         console.log("You Win");
-        alert("You Win");
         playerscore += 1;
     }
 
@@ -88,7 +86,6 @@ function game() {
 
     while (playerscore < 5 && computerscore < 5) {
         playRound(getPlayerChoice(), getComputerChoice())
-
     }
 
     if (playerscore == 5) {
